@@ -1,0 +1,27 @@
+[project]
+name = "be-vim"
+version = "0.2.0"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "asyncssh>=2.21",
+    "pillow>=11",
+    "transformers>=4.51,<5",
+    "torch>=2.6",
+    "sentencepiece",
+    "wcwidth",
+    "pynvim>=0.5",
+    "prompt-toolkit>=3.0.53",
+]
+
+[project.scripts]
+be-vim = "be_vim.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pyte>=0.8.2",
+    "ruff>=0.17.5",
+]

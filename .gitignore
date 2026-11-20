@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+var/
+.ruff_cache/
+previews/
+.DS_Store
+.env
+.env.*
+dist/
